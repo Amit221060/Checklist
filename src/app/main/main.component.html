@@ -1,0 +1,11 @@
+<div class="body">
+  <p style=color:Tomato> <b>Checklist</b></p>
+  <ul *ngFor="let item of checkboxObject; let i=index">
+    <li><input type="checkbox" [checked]=item.valu (change)=state(i)> {{item.value}}</li>
+  </ul>
+  <div class="tab">
+    <button class=" btn btn-primary" (click)=selectAll() style="margin-left:20px;">selectAll</button>
+    <button class=" btn btn-secondary" (click)=deSelectAll() style="margin-left:20px;">DeSelectAll</button>
+  </div>
+
+</div>
